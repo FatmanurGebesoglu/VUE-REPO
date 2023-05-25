@@ -1,16 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h3>{{baslik}}</h3>
+    <input type="text" ref="isim" />
+    <input type="text" ref="parola" />
+    <button @click="handleClick">Tıkla</button>
+    {{ sonuc }}
+    <br/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      baslik: 'Merhaba Vue',
+      sonuc: ''
+    };
+  },
+  methods:{
+    handleClick(){
+      //this.sonuc = this.$refs.isim.value + ' ' + this.$refs.parola.value;
+      //console.log(this.sonuc);
+      console.log(this.$refs.isim.value + ' ' + this.$refs.parola.value);
+    }
   }
+  
 }
 </script>
 
