@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{ baslik }}
+        <h1>{{ baslik }}</h1>
     </div>
 </template>
 
@@ -16,4 +16,11 @@ export default {
 
 </script>
 
-<style></style>
+<!-- eğer style kısmında scoped kullanırsak sadece bu componentteki style geçerli olur. -->
+
+<style scoped>
+h1{
+    color: red;
+    font-size: 40px;
+}
+</style>

@@ -6,7 +6,9 @@
   {{ sonuc }}
   <br/> -->
   <Header />
+  <h1>CLI ile proje geliştirme</h1>
 </template>
+
 
 <script>
 
