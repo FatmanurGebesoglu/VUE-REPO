@@ -5,7 +5,8 @@
   <button @click="handleClick">Tıkla</button>
   {{ sonuc }}
   <br/> -->
-  <Header />
+  <!-- propsun değişken olarak gönderilmesi için -->
+  <Header :baslik="yazi"/>
   <h1>CLI ile proje geliştirme</h1>
 </template>
 
@@ -16,12 +17,13 @@ import Header from './components/Header.vue';
 
 export default {
 name: 'App',
-// data(){
-//   return{
-//     baslik: 'Merhaba Vue',
-//     sonuc: ''
-//   };
-// },
+data(){
+  return{
+    //baslik: 'Merhaba Vue 3',
+    //sonuc: ''
+    yazi: 'merhaba bu props değişken olarak gönderildi'
+  };
+},
 // methods:{
 //   handleClick(){
 //     //this.sonuc = this.$refs.isim.value + ' ' + this.$refs.parola.value;

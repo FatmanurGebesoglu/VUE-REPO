@@ -6,9 +6,10 @@
 
 <script>
 export default {
+    props:['baslik'],
     data() {
         return {
-            baslik: 'Merhaba Vue',
+            //baslik: 'Merhaba Vue',
         };
     }
 }
