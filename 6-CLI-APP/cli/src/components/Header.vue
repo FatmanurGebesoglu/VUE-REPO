@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h1>{{ baslik }}</h1>
+    <div @click = "temizle">
+        <h1>Temizle</h1>
     </div>
 </template>
 
@@ -11,7 +11,13 @@ export default {
         return {
             //baslik: 'Merhaba Vue',
         };
+    },
+    methods: {
+    temizle() {
+      this.$emit('temizle');
     }
+  },
+   
 }
 
 
