@@ -1,15 +1,18 @@
 <template>
   <Formcomp />
+  <Formcomp2 />
 </template>
 
 <script>
  import Formcomp from './components/FormComp.vue'
+ import Formcomp2 from './components/FormComp2.vue'
 
 export default {
   
   name: 'App',
   components: {
-    Formcomp
+    Formcomp,
+    Formcomp2
   },
   
 }
