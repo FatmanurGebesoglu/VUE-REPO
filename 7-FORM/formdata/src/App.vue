@@ -11,12 +11,18 @@
   <br>
   <p>Comp3</p>
   <Formcomp3 />
+  <hr/>
+  <hr/>
+  <br>
+  <p>Comp4</p>
+  <Formcomp4 />
 </template>
 
 <script>
  import Formcomp from './components/FormComp.vue'
  import Formcomp2 from './components/FormComp2.vue'
  import Formcomp3 from './components/FormComp3.vue'
+ import Formcomp4 from './components/FormComp4.vue'
 
 export default {
   
@@ -24,7 +30,8 @@ export default {
   components: {
     Formcomp,
     Formcomp2,
-    Formcomp3
+    Formcomp3,
+    Formcomp4
   },
   
 }
