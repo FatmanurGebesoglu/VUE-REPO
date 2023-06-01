@@ -1,7 +1,9 @@
 <template>
     <h1>Personeller</h1>
     <div v-for="personel in personeller" :key="personel.id">
-        <p>{{ personel.ad }}</p>
+        <router-link :to="{name:'personeldetay',params:{id:personel.id}}">
+          <p>{{ personel.ad }}</p>
+        </router-link>
     </div>
 </template>
 
